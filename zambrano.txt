@@ -1,0 +1,45 @@
+https://github.com/sightmachine/SimpleCV/blob/master/SimpleCV/examples/tracking/camshift.py
+https://gist.github.com/xamox/2438871
+https://pastebin.com/WVhfmphS
+Proyecto
+"Evaluar la necesidad de utilzar TensorFlow"
+Fases:
+Tensor FLow/ Matlab 
+1. usar opencv para captura de video  1 dia = 8horas  // ok
+	Captura de Video mediante python y openCV
+	Se crea trackbar que permitira identificar los valores para definir la mascara
+	Se crea interfaz para separar la parte de seteo de variables con programa control (ventanada de inicio)
+	
+	--------------------------------------------------------------------------------
+	Boundary obtener los centros de los objetos ok
+	Retorno de las variables para creacion de mascara, revisar si se puede retornar la mascara o los valores minimos y maximos como se hace ahora.	
+	Revisar como podemos tener dos mask para encontrar dos objetos distintos pendiente
+		
+	-------------------------------------------------------------------------------
+	Definir la forma de enviar peticiones http desde python
+	--------------------------------------------------------------------------------
+2. usar tensor Flow para deteccion de Objetos 3 dias = 24 horas // Estudio de viabilidad***
+	Definir dataset
+	entrenar red neuronal
+	realizar pruebas
+	validar funcionamiento
+3. merge entre opencv  y tensor flow 2dias = 16 horas
+	obtener los pixeles del centro del objeto
+	etiquetar cada objeto
+4. levantar servidor para los robots 3 dias = 24 horas
+	Prueba Funcionamiento ESP8266
+		Establecer las credenciales de conexion
+		crear primera prueba prender led		
+	
+5. establecer comunicacion con los robots 2dias = 16 horas
+	Definir estructura envio de datos
+
+Total de horas => 88 horas  
+
+5	3horasdia/semana	15	
+2	6horasdia/finsemana	12	
+	27horas totales/semana	3,259259259 / semanas
+
+
+Fecha de inicio :  23 octubre 2017 
+Fecha Final: 15 noviembre 2017
