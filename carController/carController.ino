@@ -119,9 +119,7 @@ void loop() {
   client.flush();
 
   // Prepare the response
-  String s = "HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n\r\n<!DOCTYPE HTML>\r\n<html>\r\nGPIOs of RGB is now ";
-  s += String(valX) +":" + String(valY);
-  s += "</html>\n";
+  String s = "HTTP/1.1 200 OK\r\nContent-Type: text/html";  
 
   // Send the response to the client
   client.print(s);
