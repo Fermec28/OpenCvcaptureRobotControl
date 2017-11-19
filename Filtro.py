@@ -1,3 +1,4 @@
+from Tkinter import *
 import cv2
 import numpy as np
 
@@ -9,7 +10,8 @@ class camaraa():
         self.upper_filter = np.array([0,0,0])        
 
     def getFilter(self):
-        return  np.array([self.lower_filter,self.upper_filter])  
+        dict1 ={'lower_filter':self.lower_filter, 'upper_filter':self.upper_filter}
+        return  dict1
 
     def run(self):
           ##
@@ -18,6 +20,7 @@ class camaraa():
         ##variables para gui
         cv2.namedWindow('Filtro')
         # create trackbars for color change
+        
         cv2.createTrackbar('Hmax','Filtro',0,255,self.nothing)
         cv2.createTrackbar('Hmin','Filtro',0,255,self.nothing)
         cv2.createTrackbar('Smax','Filtro',0,255,self.nothing)
@@ -41,6 +44,8 @@ class camaraa():
             k=cv2.waitKey(1) & 0xff
             if k==27:
                 break
+        dict1 ={'lower_filter':self.lower_filter, 'upper_filter':self.upper_filter}
+        print  str (dict1)
         cv2.destroyAllWindows()
         del cam
    
@@ -48,3 +53,6 @@ class camaraa():
         self.brun=False
     def nothing(self,x):
         pass
+
+track= camaraa()
+track.run()

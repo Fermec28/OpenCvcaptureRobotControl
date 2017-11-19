@@ -1,7 +1,7 @@
 from Tkinter import *
 import cv2
 from Filtro import camaraa
-from Control import control
+#from Control import control
 import numpy as np
 import threading
 

@@ -17,6 +17,8 @@ Tensor FLow/ Matlab
 		
 	-------------------------------------------------------------------------------
 	Definir la forma de enviar peticiones http desde python ok 
+           /x:n  => n [1 2 3], 1 negativo 2 quieto 3 positivo
+	   /y:n  => n [1 2 3], 1 negativo 2 quieto 3 positivo	
 	--------------------------------------------------------------------------------
 
 4. levantar servidor para los robots 3 dias = 24 horas
